@@ -5,16 +5,31 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="/" />
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="app.css" />
-    <link rel="stylesheet" href="COAHub.Web.UI.styles.css" />
+    <link rel="stylesheet" href="_Lib/Vendors/Bootstrap.5.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="_Lib/Vendors/Bootstrap.5.3.6/bootstrap-icons-1.13.1/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="_Lib/Vendors/fontawesome-free-6.7.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="_Lib/Css/app.css" />
+    <link rel="stylesheet" href="_Lib/Css/_backgrounds.css" />
+    <link rel="stylesheet" href="_Lib/Css/_defaults.css" />
+    <link rel="stylesheet" href="_Lib/Css/_scrollbars.css" />
+    <link rel="stylesheet" href="_Lib/Css/_containers.css" />
+    <link rel="stylesheet" href="_Lib/Fonts/_fonts.css" />
+    <link rel="stylesheet" href="_Lib/Css/_paragraphs.css" />
+    <link rel="stylesheet" href="_Lib/Css/placeholders.css" />
+    <link rel="stylesheet" href="_Lib/Css/_external.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
-    <HeadOutlet />
+    <HeadOutlet  @rendermode="InteractiveServer"/>
 </head>
 
 <body>
-    <Routes />
+    <Routes @rendermode="InteractiveServer"/>
     <script src="_framework/blazor.web.js"></script>
+    <script src="_Lib/Scripts/Js/Canvas.js"></script>
+    <script src="_Lib/Scripts/Js/Modals.js"></script>
+    <script src="_Lib/Scripts/Js/Reload.js"></script>
+    <script src="_Lib/Scripts/Js/Pdf.js"></script>
+    <script src="_Lib/Vendors/Bootstrap.5.3.6/js/bootstrap.bundle.min.js"></script>
+    <script src="_Lib/Vendors/fontawesome-free-6.7.2-web/js/all.min.js"></script>
 </body>
 
 </html>
