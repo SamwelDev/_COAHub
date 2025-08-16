@@ -1,4 +1,5 @@
 ﻿using COAHub.Domain.Application_Modes.Account_Model;
+using COAHub.Domain.Application_Modes.Journal_Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace COAHub.Domain.Application_Modes.Company_Model
 {
-    public  class Company
+    public  class Company: Audit
     {
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
